@@ -12,6 +12,10 @@ function install_dependencies() {
 
 	mkdir -p ~/.jx/bin
 
+	echo "DOWNLOADED JX "
+
+	ls -la ~/.jx/bin
+
  	wget https://storage.googleapis.com/kubernetes-helm/helm-v${HELM_VERSION}-linux-amd64.tar.gz	
  	tar xvf helm-v${HELM_VERSION}-linux-amd64.tar.gz	
  	rm helm-v${HELM_VERSION}-linux-amd64.tar.gz	
